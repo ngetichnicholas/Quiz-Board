@@ -1,0 +1,16 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+@media (max-width: 780px) {
+
+}
+
+@media screen  and (min-width:0px) and (max-width: 500px) {
+
+}
+@media screen  and (min-width:500px) and (max-width: 1000px) {
+
+}

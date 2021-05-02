@@ -72,9 +72,14 @@ function submitQuiz() {
 
 // show score as "score/possible score"
   var showScore = "Your Score: " + calcScore +"/" + questionCounter;
-// if 4/4, "perfect score!"
   if (calcScore === questionCounter) {
-    showScore = showScore + "&nbsp; <strong>Perfect Score!</strong>"
+    showScore = showScore + "&nbsp; <strong>Excellent work!</strong>"
+  }
+  else if (calcScore >=5 && calcScore <8) {
+    showScore = showScore + "&nbsp; <strong>Good! Fair Performance!</strong>"
+  }
+  else if (calcScore <=4) {
+    showScore = showScore + "&nbsp; <strong>Below Average! Please retake the assessment!</strong>"
   };
   document.getElementById('userScore').innerHTML = showScore;
 }

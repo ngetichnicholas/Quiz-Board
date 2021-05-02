@@ -79,6 +79,9 @@ function submitQuiz() {
   };
   document.getElementById('userScore').innerHTML = showScore;
 }
+$('input[type="checkbox"]').on('change', function() {
+  $(this).siblings('input[type="checkbox"]').not(this).prop('checked', false);
+});
 
 $(document).ready(function() {
   $("form#quizForm").submit(function(event) {

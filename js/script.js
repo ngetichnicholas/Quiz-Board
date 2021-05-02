@@ -1,9 +1,7 @@
 function submitQuiz() {
-  console.log('submitted');
 
   // function to return correct answer string
   function correctAnswer (correctStringNo, qNumber) {
-    console.log("qNumber: " + qNumber);  // logs 1,2,3,4 after called below
     return ("Correct answer: &nbsp;<strong>" +
       (document.getElementById(correctStringNo).innerHTML) + "</strong>");
     }
@@ -59,7 +57,6 @@ function submitQuiz() {
 
   // calc score with answerScore function
   var calcScore = (answerScore('q1') + answerScore('q2') + answerScore('q3') + answerScore('q4') +answerScore('q5') + answerScore('q6') + answerScore('q7') + answerScore('q8')+answerScore('q9') + answerScore('q10'));
-  console.log("CalcScore: " + calcScore); // it works!
 
   // calculate "possible score" integer
   var questionCountArray = document.getElementsByClassName('question');

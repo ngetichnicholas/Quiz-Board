@@ -3,6 +3,7 @@ html, body {
   padding: 0;
   width: 100%;
 }
+@import url(https://fonts.googleapis.com/css?family=Work+Sans:300,600);
 
 @media (max-width: 780px) {
 

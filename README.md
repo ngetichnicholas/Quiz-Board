@@ -3,7 +3,7 @@
 Nicholas Ngetich
 ## Description
  This project is about creating a website on which students can take the test. They will answer the multiple choice questions on the website and after submitting their answers, they know what they scored on the website.
-![alt text]()
+![alt text](https://github.com/ngetichnicholas/Quiz-Board/blob/master/Quiz-Board-IP.png)
 ### Prerequisites
 You need to have git installed
 You can install it with the following command in your terminal

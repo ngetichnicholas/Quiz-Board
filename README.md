@@ -20,7 +20,7 @@ To access this project on your local files, you can clone it using these steps
 - HTML
 - CSS
 ### Live Site
-View [live]()
+View [live](https://ngetichnicholas.github.io/Quiz-Board/)
 ### License
 This project is under:  
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](/LICENSE)  

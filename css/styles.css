@@ -6,6 +6,9 @@ html, body {
 .answer {
   display: none;
 }
+.question {
+  font-weight: 700;
+}
 ul {
   display: flex;
 }
@@ -14,6 +17,13 @@ span {
 }
 input {
   padding: 8rem;
+}
+h2,.submitter {
+  text-align: center;
+}
+h2 {
+  color: blue;
+  background-color: #E2F2EF;
 }
 label {
   margin-left: 1rem;
@@ -40,6 +50,7 @@ label {
 }
 .form-group {
   align-items: center;
+  background-color: #EBEBEB;
 }
 @import url(https://fonts.googleapis.com/css?family=Work+Sans:300,600);
 

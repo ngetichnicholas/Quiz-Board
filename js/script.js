@@ -1,3 +1,4 @@
+// Business Logic
 function submitQuiz() {
 
   // function to return correct answer string
@@ -44,7 +45,6 @@ function submitQuiz() {
 
     for (var i = 0, length = radiosNo.length; i < length; i++) {
          if (radiosNo[i].checked) {
-    // do something with radiosNo
         var answerValue = Number(radiosNo[i].value);
       }
     }

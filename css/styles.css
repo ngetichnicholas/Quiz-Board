@@ -24,10 +24,8 @@ input {
   margin: 1.5rem;
 }
 
-h2 {
-  color: blue;
+h2,h1 {
   text-align: center;
-  background-color: #E2F2EF;
 }
 label {
   margin-left: 1rem;

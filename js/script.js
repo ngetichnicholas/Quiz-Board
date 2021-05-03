@@ -53,6 +53,7 @@ $('input[type="checkbox"]').on('change', function () {
 $(document).ready(function () {
   $("form#quizForm").submit(function (event) {
     event.preventDefault();
+    $("#submitButton").hide();
   })
   $('#submitButton').click(function () {
     $(this).addClass('hide');

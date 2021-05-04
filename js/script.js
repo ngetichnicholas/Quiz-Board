@@ -22,9 +22,16 @@ function submitQuiz() {
     return answerValue;
   }
 
-  // calc score with answerScore function
-  var calcScore = (answerScore('q1') + answerScore('q2') + answerScore('q3') + answerScore('q4') + answerScore('q5') + answerScore('q6') + answerScore('q7') + answerScore('q8') + answerScore('q9') + answerScore('q10'));
-
+ 
+  // print correct answers only if wrong (calls correctAnswer function)
+  var calcScore =0;
+  for (let i=1;i<=10;i++) {
+     // calc score with answerScore function
+     calcScore = calcScore+ answerScore("q"+i);
+    if (answerScore("q"+i) === 0) {
+      document.getElementById("correctAnswer"+i).innerHTML = correctAnswer("correctString"+i, i);
+    }
+  }
   // calculate "possible score" integer
   var questionCountArray = document.getElementsByClassName('question');
 
@@ -40,11 +47,10 @@ function submitQuiz() {
   } else if (calcScore >= 5 && calcScore < 8) {
     showScore = showScore + "&nbsp; <strong>Good! Fair Performance!</strong>"
   } else if (calcScore <= 4) {
-    showScore = showScore + "&nbsp; <strong>Below Average! Please retake the assessment!</strong>"
+    showScore = showScore + "&nbsp; <strong>Below Average! Please contact TM for retake!</strong>"
   };
   document.getElementById('userScore').innerHTML = showScore;
 }
-
 // UI Logic
 $('input[type="checkbox"]').on('change', function () {
   $(this).siblings('input[type="checkbox"]').not(this).prop('checked', false);

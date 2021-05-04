@@ -8,6 +8,10 @@ html, body {
 }
 .question {
   font-weight: 700;
+  color: #1877F2;
+}
+.quizAnswers {
+  color: green;
 }
 ul {
   display: flex;
@@ -26,6 +30,7 @@ input {
 
 h2,h1 {
   text-align: center;
+  color: green;
 }
 label {
   margin-left: 1rem;

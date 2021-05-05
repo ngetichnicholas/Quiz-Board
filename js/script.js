@@ -31,7 +31,11 @@ function submitQuiz() {
     if (answerScore("q"+i) === 0) {
       let quizName ="q"+i
       document.getElementById("correctAnswer"+i).innerHTML = correctAnswer("correctString"+i, i);
-      $("input[name=" + quizName + "]").parents("ul").addClass("danger")
+      $("input[name=" + quizName + "]:checked").next("label").addClass("danger")
+    }
+    else if (answerScore("q"+i) === 1) {
+      quizName ="q"+i
+      $("input[name=" + quizName + "]:checked").next("label").addClass("success")
     }
   }
   // calculate "possible score" integer

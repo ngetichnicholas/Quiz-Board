@@ -60,6 +60,9 @@ label {
   background-color: red;
   border-color: #1877F2;
 }
+.success {
+  background-color: green;
+}
 .form-group {
   align-items: center;
   border-bottom: 0.5rem solid white;

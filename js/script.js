@@ -54,14 +54,14 @@ function submitQuiz() {
     showScore = showScore + "&nbsp; <strong>Good! Fair Performance!</strong>"
     $("#userScore").addClass("primary");
   } else if (calcScore <= 4) {
-    showScore = showScore + "&nbsp; <strong>Below Average! Please contact TM for retake!</strong>"
+    showScore = showScore + "&nbsp; <strong>Below Average! Please contact your instructor for retake!</strong>"
     $("#userScore").addClass("danger");
   };
   document.getElementById('userScore').innerHTML = showScore;
 }
 // UI Logic
 $('input[type="checkbox"]').on('change', function () {
-  $(this).siblings('input[type="checkbox"]').not(this).prop('checked', false);
+  $(this).parent().siblings().children('input[type="checkbox"]').not(this).prop('checked', false);
 });
 
 $(document).ready(function () {

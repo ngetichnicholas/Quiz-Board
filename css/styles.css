@@ -3,6 +3,18 @@ html, body {
   padding: 0;
   width: 100%;
 }
+@media screen and (min-width:1000px) {
+  .container-fluid {
+    width: 80%;
+    margin: 2rem 10% 2rem 10%;
+  }
+}
+@media screen and (min-width:1400px) {
+  .container-fluid {
+    width: 60%;
+    margin: 2rem 20% 2rem 20%;
+  }
+}
 .answer {
   display: none;
 }
@@ -13,7 +25,7 @@ html, body {
 .quizAnswers {
   color: green;
 }
-ul {
+.ul {
   display: flex;
   margin: 0;
   padding: 2rem 0rem 2rem 0rem;
@@ -79,12 +91,13 @@ label {
 }
 @import url(https://fonts.googleapis.com/css?family=Work+Sans:300,600);
 
-@media (max-width: 780px) {
-
-}
-
 @media screen  and (min-width:0px) and (max-width: 500px) {
-
+  ul {
+    display: -webkit-inline-box;
+    flex-direction: column;
+    margin: 0;
+    padding: 2rem 0rem 2rem 0rem;
+  }
 }
 @media screen  and (min-width:500px) and (max-width: 1000px) {
 

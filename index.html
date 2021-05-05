@@ -9,7 +9,7 @@
   <title>Quiz-Board | IP</title>
 </head>
 <body>
-  <div class="container">
+  <div class="container-fluid">
     <div class="jumbotron text-center">
       <h1>HTML and CSS Quizz Board</h1>
       <p>Answer all the questions below and submit for grading!</p>
@@ -17,142 +17,207 @@
     <form action="" id="quizForm">
       <div class="form-group">
         <p class="question">1: HTML stands for?</p>
-        <ul>
-          <input type="checkbox" id="mail1" class="answer" name="q1" value="1">
-          <label for="mail1"></label><span id="correctString1">Hyper Text Markup Language</span>
-          <input type="checkbox" id="mail2" class="answer"  name="q1" value="0">
-          <label for="mail2"></label><span>High Text Markup Language</span>
-          <input class="answer" type="checkbox" id="mail3" name="q1" value="0">
-          <label for="mail3"></label><span>Hyper Tabular Markup Language</span>
-          <input class="answer" type="checkbox" id="mail4" name="q1" value="0">
-          <label for="mail4"></label><span>None of the above</span>
-        </ul>
+        <div class="selections">
+          <div class="ul">
+            <input type="checkbox" id="mail1" class="answer" name="q1" value="1">
+            <label for="mail1"></label><span id="correctString1">Hyper Text Markup Language</span>
+          </div>
+          <div class="ul">
+            <input type="checkbox" id="mail2" class="answer"  name="q1" value="0">
+            <label for="mail2"></label><span>High Text Markup Language</span>
+          </div>
+          <div
+          class="ul">
+            <input class="answer" type="checkbox" id="mail3" name="q1" value="0">
+            <label for="mail3"></label><span>Hyper Tabular Markup Language</span>
+          </div>
+          <div class="ul">
+            <input class="answer" type="checkbox" id="mail4" name="q1" value="0">
+            <label for="mail4"></label><span>None of the above</span>
+          </div>
+        </div>
         <div class="quizAnswers" id="correctAnswer1"></div>
       </div>
       <div class="form-group">
         <p class="question">2: Markup tags tell the web browser</p>
-        <ul>
-          <input type="checkbox" id="q2A1" class="answer" name="q2" value="0">
-          <label for="q2A1"></label><span>How to organise the page</span>
-          <input class="answer" type="checkbox" id="q2A2" name="q2" value="1">
-          <label for="q2A2"></label><span id="correctString2">How to display the page</span>
-          <input class="answer" type="checkbox" id="q2A3" name="q2" value="0">
-          <label for="q2A3"></label><span>How to display message box on page</span>
-          <input class="answer" type="checkbox" id="q2A4" name="q2" value="0">
-          <label for="q2A4"></label><span>None of the above</span>
-        </ul>
+        <div class="selection">
+          <div class="ul">
+            <input type="checkbox" id="q2A1" class="answer" name="q2" value="0">
+            <label for="q2A1"></label><span>How to organise the page</span>
+          </div>
+          <div class="ul">
+            <input class="answer" type="checkbox" id="q2A2" name="q2" value="1">
+            <label for="q2A2"></label><span id="correctString2">How to display the page</span>
+          </div>
+          <div class="ul">
+            <input class="answer" type="checkbox" id="q2A3" name="q2" value="0">
+            <label for="q2A3"></label><span>How to display message box on page</span>
+          </div>
+          <div class="ul">
+            <input class="answer" type="checkbox" id="q2A4" name="q2" value="0">
+            <label for="q2A4"></label><span>None of the above</span>
+          </div>
+        </div>
         <div class="quizAnswers" id="correctAnswer2"></div>
       </div>
       <div class="form-group">
         <p class="question">3: www is based on which model?</p>
-        <ul>
+        <div class="ul">
           <input type="checkbox" id="Q3A1" class="answer" name="q3" value="0">
           <label for="Q3A1"></label><span>Local-server</span>
+        </div>
+        <div class="ul">
           <input class="answer" type="checkbox" id="Q3A2" name="q3" value="1">
           <label for="Q3A2"></label><span id="correctString3">Client-server</span>
+        </div>
+        <div class="ul">
           <input class="answer" type="checkbox" id="Q3A3" name="q3" value="0">
           <label for="Q3A3"></label><span>3-tier</span>
+        </div>
+        <div class="ul">
           <input class="answer" type="checkbox" id="Q3A4" name="q3" value="0">
           <label for="Q3A4"></label><span>None of the above</span>
-        </ul>
+        </div>
         <div class="quizAnswers" id="correctAnswer3"></div>
       </div>
       <div class="form-group">
         <p class="question">4: What are Empty elements and is it valid?</p>
-        <ul>
+        <div class="ul">
           <input type="checkbox" id="Q4A1" class="answer" name="q4" value="0">
           <label for="Q4A1"></label><span>No, there is no such terms as Empty Element</span>
+        </div>
+        <div class="ul">
           <input class="answer" type="checkbox" id="Q4A2" name="q4" value="1">
           <label for="Q4A2"></label><span id="correctString4">Empty elements are element with no data</span>
+        </div>
+        <div class="ul">
           <input class="answer" type="checkbox" id="Q4A3" name="q4" value="0">
           <label for="Q4A3"></label><span>No, it is not valid to use Empty Element</span>
+        </div>
+        <div class="ul">
           <input class="answer" type="checkbox" id="Q4A4" name="q4" value="0">
           <label for="Q4A4"></label><span>None of the above</span>
-        </ul>
+        </div>
         <div class="quizAnswers" id="correctAnswer4"></div>
       </div>
       <div class="form-group">
         <p class="question">5: Which of the following attributes of text box control allow to limit the maximum character?</p>
-        <ul>
+        <div class="ul">
           <input type="checkbox" id="Q5A1" class="answer" name="q5" value="0">
           <label for="Q5A1"></label><span>size</span>
+        </div>
+        <div class="ul">
           <input class="answer" type="checkbox" id="Q5A2" name="q5" value="0">
           <label for="Q5A2"></label><span>len</span>
+        </div>
+        <div class="ul">
           <input class="answer" type="checkbox" id="Q5A3" name="q5" value="1">
           <label for="Q5A3"></label><span id="correctString5">maxlength</span>
+        </div>
+        <div class="ul">
           <input class="answer" type="checkbox" id="Q5A4" name="q5" value="0">
           <label for="Q5A4"></label><span>All of the above</span>
-        </ul>
+        </div>
         <div class="quizAnswers" id="correctAnswer5"></div>
       </div>
       <div class="form-group">
         <p class="question">6: CSS stands for -</p>
-        <ul>
+        <div class="ul">
           <input type="checkbox" id="Q6A1" class="answer" name="q6" value="0">
           <label for="Q6A1"></label><span>Cascade style sheets</span>
+        </div>
+        <div class="ul">
           <input class="answer" type="checkbox" id="Q6A2" name="q6" value="0">
           <label for="Q6A2"></label><span>Color and style sheets</span>
+        </div>
+        <div class="ul">
           <input class="answer" type="checkbox" id="Q6A3" name="q6" value="1">
           <label for="Q6A3"></label><span id="correctString6">Cascading style sheets</span>
+        </div>
+        <div class="ul">
           <input class="answer" type="checkbox" id="Q6A4" name="q6" value="0">
           <label for="Q6A4"></label><span>None of the above</span>
-        </ul>
+        </div>
         <div class="quizAnswers" id="correctAnswer6"></div>
       </div>
       <div class="form-group">
         <p class="question">7: The property in CSS used to change the background color of an element is -</p>
-        <ul>
+        <div class="ul">
           <input type="checkbox" id="Q7A1" class="answer" name="q7" value="0">
           <label for="Q7A1"></label><span>bgcolor</span>
+        </div>
+        <div class="ul">
           <input class="answer" type="checkbox" id="Q7A2" name="q7" value="0">
           <label for="Q7A2"></label><span>color</span>
+        </div>
+        <div class="ul">
           <input class="answer" type="checkbox" id="Q7A3" name="q7" value="1">
           <label for="Q7A3"></label><span id="correctString7">background-color</span>
+        </div>
+        <div class="ul">
           <input class="answer" type="checkbox" id="Q7A4" name="q7" value="0">
           <label for="Q7A4"></label><span>All of the above</span>
-        </ul>
+        </div>
         <div class="quizAnswers" id="correctAnswer7"></div>
       </div>
       <div class="form-group">
         <p class="question">8: The property in CSS used to change the text color of an element is -</p>
-        <ul>
+        <div class="ul">
           <input type="checkbox" id="Q8A1" class="answer" name="q8" value="0">
           <label for="Q8A1"></label><span>bgcolor</span>
+        </div>
+        <div class="ul">
           <input class="answer" type="checkbox" id="Q8A2" name="q8" value="1">
           <label for="Q8A2"></label><span id="correctString8">color</span>
+        </div>
+        <div class="ul">
           <input class="answer" type="checkbox" id="Q8A3" name="q8" value="0">
           <label for="Q8A3"></label><span>background-color</span>
+        </div>
+        <div class="ul">
           <input class="answer" type="checkbox" id="Q8A4" name="q8" value="0">
           <label for="Q8A4"></label><span>All of the above</span>
-        </ul>
+        </div>
         <div class="quizAnswers" id="correctAnswer8"></div>
       </div>
       <div class="form-group">
         <p class="question">9: Which of the following property is used as the shorthand property for the padding properties?</p>
-        <ul>
+        <div class="ul">
           <input type="checkbox" id="Q9A1" class="answer" name="q9" value="0">
           <label for="Q9A1"></label><span>padding-left</span>
+        </div>
+        <div class="ul">
           <input class="answer" type="checkbox" id="Q9A2" name="q9" value="0">
           <label for="Q9A2"></label><span>padding-right</span>
+        </div>
+        <div class="ul">
           <input class="answer" type="checkbox" id="Q9A3" name="q9" value="1">
           <label for="Q9A3"></label><span id="correctString9">padding</span>
+        </div>
+        <div class="ul">
           <input class="answer" type="checkbox" id="Q9A4" name="q9" value="0">
           <label for="Q9A4"></label><span>All of the above</span>
-        </ul>
+        </div>
         <div class="quizAnswers" id="correctAnswer9"></div>
       </div>
       <div class="form-group">
         <p class="question">10: The CSS property used to make the text bold is -</p>
-        <ul>
+        <div class="ul">
           <input type="checkbox" id="Q10A1" class="answer" name="q10" value="1">
           <label for="Q10A1"></label><span id="correctString10">font-weight : bold</span>
+        </div>
+        <div class="ul">
           <input class="answer" type="checkbox" id="Q10A2" name="q10" value="0">
           <label for="Q10A2"></label><span>weight: bold</span>
+        </div>
+        <div class="ul">
           <input class="answer" type="checkbox" id="Q10A3" name="q10" value="0">
           <label for="Q10A3"></label><span>font: bold</span>
+        </div>
+        <div class="ul">
           <input class="answer" type="checkbox" id="Q10A4" name="q10" value="0">
           <label for="Q10A4"></label><span>style: bold</span>
-        </ul>
+        </div>
         <div class="quizAnswers" id="correctAnswer10"></div>
       </div>
       <!--show score upon submit-->

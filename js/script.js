@@ -29,12 +29,13 @@ function submitQuiz() {
      // calc score with answerScore function
      calcScore = calcScore+ answerScore("q"+i);
     if (answerScore("q"+i) === 0) {
+      let quizName ="q"+i
       document.getElementById("correctAnswer"+i).innerHTML = correctAnswer("correctString"+i, i);
+      $("input[name=" + quizName + "]").parents("ul").addClass("danger")
     }
   }
   // calculate "possible score" integer
   var questionCountArray = document.getElementsByClassName('question');
-
   var questionCounter = 0;
   for (var i = 0, length = questionCountArray.length; i < length; i++) {
     questionCounter++;

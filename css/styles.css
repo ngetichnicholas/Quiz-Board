@@ -28,7 +28,11 @@ html, body {
 .ul {
   display: flex;
   margin: 0;
-  padding: 2rem 0rem 2rem 0rem;
+  padding: 0rem 0rem 2rem 0rem;
+}
+.output {
+  width: 60%;
+  margin: 0 20% 0 20%;
 }
 span { 
   width: 90%;
@@ -70,16 +74,23 @@ label {
 }
 .danger {
   background-color: red;
+  padding: 0.2rem;
   border-color: #1877F2;
   color: black;
+  border-radius: 6px;
+
 }
 .success {
   background-color: green;
+  padding: 0.2rem;
   color: black;
+  border-radius: 6px;
 }
 .primary{
   background-color: #1877F2;
+  padding: 0.2rem;
   color: black;
+  border-radius: 6px;
 }
 .form-group {
   align-items: center;
@@ -92,13 +103,14 @@ label {
 @import url(https://fonts.googleapis.com/css?family=Work+Sans:300,600);
 
 @media screen  and (min-width:0px) and (max-width: 500px) {
-  ul {
-    display: -webkit-inline-box;
-    flex-direction: column;
+  .output {
+    width: 100%;
     margin: 0;
-    padding: 2rem 0rem 2rem 0rem;
   }
 }
 @media screen  and (min-width:500px) and (max-width: 1000px) {
-
+  .output {
+    width: 80%;
+    margin: 0 10% 0 10%;
+  }
 }

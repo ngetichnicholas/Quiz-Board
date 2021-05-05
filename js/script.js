@@ -49,10 +49,13 @@ function submitQuiz() {
   var showScore = "Your Score: " + calcScore + "/" + questionCounter;
   if (calcScore >= 8) {
     showScore = showScore + "&nbsp; <strong>Excellent work!</strong>"
+    $("#userScore").addClass("success");
   } else if (calcScore >= 5 && calcScore < 8) {
     showScore = showScore + "&nbsp; <strong>Good! Fair Performance!</strong>"
+    $("#userScore").addClass("primary");
   } else if (calcScore <= 4) {
     showScore = showScore + "&nbsp; <strong>Below Average! Please contact TM for retake!</strong>"
+    $("#userScore").addClass("danger");
   };
   document.getElementById('userScore').innerHTML = showScore;
 }

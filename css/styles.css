@@ -31,7 +31,7 @@ input {
 
 h2,h1 {
   text-align: center;
-  color: green;
+  color: #1877F2;
 }
 label {
   margin-left: 1rem;
@@ -59,9 +59,15 @@ label {
 .danger {
   background-color: red;
   border-color: #1877F2;
+  color: black;
 }
 .success {
   background-color: green;
+  color: black;
+}
+.primary{
+  background-color: #1877F2;
+  color: black;
 }
 .form-group {
   align-items: center;

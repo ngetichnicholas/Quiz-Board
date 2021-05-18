@@ -103,7 +103,7 @@ label {
   padding: 2rem 0 0 2rem ;
 
 }
-@import url(https://fonts.googleapis.com/css?family=Work+Sans:300,600);
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap');
 
 @media screen  and (min-width:0px) and (max-width: 500px) {
   .output {
@@ -116,4 +116,7 @@ label {
     width: 80%;
     margin: 0 10% 0 10%;
   }
+}
+* {
+  font-family: 'Jost', sans-serif !important;
 }
